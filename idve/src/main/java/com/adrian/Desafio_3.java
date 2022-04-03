@@ -40,18 +40,18 @@ public class Desafio_3
         System.out.print("Insira um numero: ");
         int value = in.nextInt();
         //═══════════════════════════⊹⊱❖⊰⊹═════════════════════════════
-        int currentSum = 0;
-        int currentNumber = 6;
+        int soma = 0;
+        int numero = 6;
         
-        while ((currentSum + currentNumber) < value) 
+        while ((soma + numero) < value) 
         {
-            if (ePrimo(currentNumber)) 
+            if (ePrimo(numero)) 
             {
-                currentSum += currentNumber;
+                soma += numero;
             }
-            currentNumber++;
+            numero++;
         }
-        System.out.println(currentSum);
+        System.out.println(soma);
         in.close();
     }
 }
